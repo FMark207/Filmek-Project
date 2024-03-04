@@ -1,0 +1,219 @@
+/*Default Settings*/
+
+/*Ha lehet defaultot ne nagyon editeld, mert kihat az összes oldalra, ha editeled akkor nezd meg hogy változott-e valami a többi oldalon is!*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #0E1C40;
+    overflow: hidden;
+    display: flex;
+}
+
+a{
+    color: #E6E6E6;
+    text-decoration: none;
+}
+/*Navigator Section*/
+
+.navigator{
+    background-color: #333D71;
+    width: 25%;
+    height: 100%;
+}
+
+/*Profile Section*/
+
+.profile-content{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    height: 25vh;
+}
+
+.profile-content img{
+    border-radius: 50%;
+    height: 12vh;
+    width: 12vh;
+}
+
+.profile-text{
+    width: 56%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+#profile-manager{
+    color: #C5C3C3;
+}
+
+#profile-name{
+    margin: 0;
+    font-size: 23px;
+    color: #ECECEC;
+}
+
+/*Navigator Text Section*/
+
+.nav-text{
+    display: flex;
+    flex-direction:column;
+    margin-left: 11vh;
+    color: #E6E6E6;
+    font-size: 23px;
+    margin-top: 3vh;
+}
+
+.nav-text p{
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+}
+
+.nav-text p.active, .nav-text p:hover{
+    color: #091932;
+}
+
+.sign-out{
+    display: flex;
+    flex-direction:column;
+    margin-left: 11vh;
+    color: #B0B0B0;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 20px;
+    margin-top: 6vh;
+}
+
+/*Discover Section*/
+
+#discover{
+    width: 75%;
+    height: 100%;
+    color: #E6E6E6;
+    overflow-y:scroll;
+}
+
+.blank h1{
+    color: rgba(0, 0, 0, 0);
+    user-select: none;
+}
+
+.disc-text{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.glide__slide{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.glide__slide h1{
+    width: 60%;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: auto;
+  }
+
+.glide__slide img{
+    width: 96vh;
+    height: 54vh;
+}
+
+.movie-desc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+}
+
+
+/* Account-Manager */
+
+.account-manager{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-panel{
+    height: 80%;
+    width: 80%;
+    background-color: rgb(66, 91, 126);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;
+    border: 4px solid rgb(31, 54, 87);
+    color: #E6E6E6;
+}
+
+.account-panel div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    gap: 10px   ;
+}
+
+.account-panel label{
+    font-size: 24px;
+}
+
+.account-panel input{
+    width: 70%;
+    height: 80%;
+    border-radius: 40px;
+    border: 2px solid gray;
+    font-size: 24px;
+    text-align: center;
+}
+
+.account-panel button{
+    width: 40%;
+    height: 10%;
+    border-radius: 20px;
+    border: 2px solid green;
+    background-color: greenyellow;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.account-panel button:hover{
+    transform: scale(1.05);
+    background-color: rgb(137, 204, 37);
+}
+
+.account-panel button:active{
+    transform: scale(0.98);
+}

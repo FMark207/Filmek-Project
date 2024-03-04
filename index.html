@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlixNet</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/glide.core.css">
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glide.theme.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
 </head>
 <body>
     <!-- A navigator alap lesz ne töröld ki!-->
@@ -13,25 +17,48 @@
             <img src="images/Profile-Icon.png">
             <div class="profile-text">
                 <p id="profile-name">Profile Name</p>
-                <a id="profile-manager" href="#">Manage Account</a>
+                <a id="profile-manager" href="accountManager.html">Manage Account</a>
             </div>
         </div>
         <div class="nav-text">
-            <p>Search</p>
-            <p>Discover</p>
-            <p>My List</p>
-            <p>Trending</p>
-            <p>Movies</p>
+            <a href="#"><p>Search</p></a>
+            <a href="index.html"><p>Discover</p></a>
+            <a href="#"><p>My List</p></a>
+            <a href="#"><p>Trending</p></a>
+            <a href="#"><p>Movies</p></a>
         </div>
         <div class="sign-out">
             <p>Sign-Out</p>
         </div>
     </div>
     <!-- Minden odalnál lehet más a discover class flexbox miatt!-->
-    <div class="discover">
-        <div></div>
+    <div id="discover">
+        <div class="disc-text">
+            <h1>Discover New Shows On FlixNet!</h1>
+            <h3>On FlixNet We provide You With A Large Sum of Top Quality Movies, and Serieses</h3>
+        </div>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <div class="glide__slide"><img src="https://i.ytimg.com/vi/1FhmnB6SwBc/maxresdefault.jpg" alt=""><div class="movie-desc"><h1>Money Heist</h1><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique tempore reprehenderit beatae quod quaerat perferendis, dolore distinctio cumque laboriosam rem dolorem commodi impedit laudantium nesciunt ea id labore nihil?</p></div></div>
+                <div class="glide__slide"><img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABfhLu21hMpCtB8CvwuVTciBQIeLdQ_pwiFSoiAG_bNUtsBMwGuHBLZxC6ohYSMNIB1PHCQLm80Kx1tXJrRJaBRCKABOmumbYGjq7.jpg?r=c76" alt=""><div class="movie-desc"><h1>Nightmare of The Wolf</h1><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique tempore reprehenderit beatae quod quaerat perferendis, dolore distinctio cumque laboriosam rem dolorem commodi impedit laudantium nesciunt ea id labore nihil?</p></div></div>
+                <div class="glide__slide"><img src="https://conversationsabouther.net/wp-content/uploads/2014/10/Breaking-Bad.jpg" alt=""><div class="movie-desc"><h1>Breaking Bad</h1><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique tempore reprehenderit beatae quod quaerat perferendis, dolore distinctio cumque laboriosam rem dolorem commodi impedit laudantium nesciunt ea id labore nihil?</p></div></div>
+                <div class="glide__slide"><img src="https://wallpapers.com/images/featured/lucifer-devil-vbu9s0mttfzc9ra7.jpg" alt=""><div class="movie-desc"><h1>Lucifer</h1><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique tempore reprehenderit beatae quod quaerat perferendis, dolore distinctio cumque laboriosam rem dolorem commodi impedit laudantium nesciunt ea id labore nihil?</p></div></div>
+                <div class="glide__slide"><img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABXuRYQptySNugp2yoB0aPTfioxmd8o-msk3q3eLDZtIbWinhnk8xALrF7DoHmaY5eG8KjqstwbBvCyvZOV77cXvY1TxKvEvOPHg1.jpg?r=a1f" alt=""><div class="movie-desc"><h1>John Wick 3</h1><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique tempore reprehenderit beatae quod quaerat perferendis, dolore distinctio cumque laboriosam rem dolorem commodi impedit laudantium nesciunt ea id labore nihil?</p></div></div>
+                <div class="glide__slide"><img src="https://static.cdprojektred.com/cms.cdprojektred.com/16x9_big/45d16cac8654b4ebc86ee8c1e4e9f13e5b47e6d0-1280x720.jpg" alt=""><div class="movie-desc"><h1>Cyberpunk: Edgerunners</h1><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique tempore reprehenderit beatae quod quaerat perferendis, dolore distinctio cumque laboriosam rem dolorem commodi impedit laudantium nesciunt ea id labore nihil?</p></div></div>
+                <div class="glide__slide"><img src="https://images.ctfassets.net/4cd45et68cgf/5DIYYKy9JB7m90nozSIcM1/2acf7e826bbe6a656fd91c9179f17e0b/Stranger_Things__The_Experience.jpg?w=2000" alt=""><div class="movie-desc"><h1>Stranger Things</h1><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique tempore reprehenderit beatae quod quaerat perferendis, dolore distinctio cumque laboriosam rem dolorem commodi impedit laudantium nesciunt ea id labore nihil?</p></div></div>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+              </div>
+        </div>
     </div>
     <!-- Script maradjon mindig a vegen, ha lehet egy fajlt hasznaljunk-->
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        new Glide('.glide').mount()
+    </script>
 </body>
 </html>
