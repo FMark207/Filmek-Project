@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlixNet - Search</title>
+    <title>FlixNet</title>
+    <link rel="stylesheet" href="css/glide.core.css">
+    <link rel="stylesheet" href="css/glide.core.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glide.theme.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
 </head>
 <body>
+    <!-- A navigator alap lesz ne töröld ki!-->
     <div class="navigator">
         <div class="profile-content">
             <img src="images/Profile-Icon.png">
@@ -23,27 +28,18 @@
             <a href="movies.html"><p>Movies</p></a>
         </div>
         <div class="sign-out">
-            <a href="signout.html" id="no-effect"><p>Sign-Out</p></a>
+            <a href="signout.html"><p>Sign-Out</p></a>
         </div>
     </div>
-    <div class="search">
-        <div class="search-inp">
-            <i class="fa-solid fa-magnifying-glass" id="icon-mag" style="color: #E6E6E6;"></i>
-            <div class="search-content">
-                <input type="text" id="search-bar">
-                <i class="fa-solid fa-xmark" id="delete" onclick="deleteText(searchBar)"></i>
-            </div>
-        </div>
-        <div class="movie-list">
-            <div >
-                <div class="movie-card">
-                    <img src="https://i.ytimg.com/vi/1FhmnB6SwBc/maxresdefault.jpg" id="movie-img">
-                    <h3>Big Money Heist</h3>
-                </div>
-            </div>
-        </div>
+    <!-- Minden odalnál lehet más a discover class flexbox miatt!-->
+    <div id="movies">
+        
     </div>
-    <script src="https://kit.fontawesome.com/3b31cb99f3.js" crossorigin="anonymous"></script>
+    <!-- Script maradjon mindig a vegen, ha lehet egy fajlt hasznaljunk-->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        new Glide('.glide').mount()
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
