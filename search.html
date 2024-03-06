@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlixNet - Account</title>
+    <title>FlixNet - Search</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,19 +26,24 @@
             <p>Sign-Out</p>
         </div>
     </div>
-    <div class="account-manager">
-        <div class="account-panel">
-            <div>
-            <label for="username">Set Username: </label>
-            <input type="text" id="username">
+    <div class="search">
+        <div class="search-inp">
+            <i class="fa-solid fa-magnifying-glass" id="icon-mag" style="color: #E6E6E6;"></i>
+            <div class="search-content">
+                <input type="text" id="search-bar" onclick="checkActive(searchBar)">
+                <i class="fa-solid fa-xmark" id="delete" onclick="deleteText(searchBar)"></i>
             </div>
-            <div>
-            <label for="password">Set Password: </label>
-            <input type="password" id="password">
+        </div>
+        <div class="movie-list">
+            <div >
+                <div class="movie-card">
+                    <img src="https://i.ytimg.com/vi/1FhmnB6SwBc/maxresdefault.jpg" id="movie-img">
+                    <h3>Big Money Heist</h3>
+                </div>
             </div>
-            <button onclick="setLogin()">Update Profile</button>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/3b31cb99f3.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>

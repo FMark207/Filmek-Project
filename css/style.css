@@ -218,3 +218,73 @@ a{
 .account-panel button:active{
     transform: scale(0.98);
 }
+
+/* Movie App*/
+
+.search{
+    display: flex;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding-top: 3vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+}
+
+.search-inp{
+    display: flex;
+    align-items: center;
+    height: 20%;
+    gap: 1vw;
+}
+
+#search-bar{
+    height: 4vh;
+    width: 100%;
+    border: 0;
+    border-radius: 40px;
+    outline: none;
+    font-size: 20px;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+.search-content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 25vw;
+    
+}
+
+#delete{
+    display: none;
+    position: absolute;
+    left: 94%;
+    top: 24%;
+    transition: ease-in-out 0.1s;
+    user-select: none;
+    cursor: pointer;
+}
+
+#icon-mag{
+    font-size: 24px;
+}
+
+.movie-card{
+    background-color: #E6E6E6;
+    width: 20vw;
+    height: 40vh;
+    text-align: center;
+    border-radius: 40px;
+}
+
+#movie-img{
+    height: 25vh;
+    width: 100%;
+    background-image: url();
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
